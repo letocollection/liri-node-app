@@ -8,14 +8,17 @@ var client = new twitter({
     access_token_secret: 'neabgPXdOdW2RIi2FsyBXY19tSLPjAlvktJIIHCVLheWE',
 });
 
+console.log("===================================================================");
 var params = { screen_name: '@leonardohyea' };
 client.get('statuses/user_timeline', params, function(error, tweets, response) {
     if (!error) {
         console.log("tweetcount: " + tweets.length);
         for (i = 0; i < tweets.length; i++) {
-            console.log(tweets[i].text);
-        };
 
+            console.log(tweets[i].text);
+
+        };
+        console.log("===================================================================");
 
     }
 });

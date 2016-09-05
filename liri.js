@@ -3,14 +3,6 @@ var twitter = require("twitter");
 // var spotify = require("spotify");
 var request = require("request");
 
-// `my-tweets`
-
-// * `spotify-this-song`
-
-// * `movie-this`
-
-// * `do-what-it-says`
-
 var command = process.argv[2];
 
 if (command == "my-tweets") {
@@ -41,7 +33,7 @@ if (command == "my-tweets") {
 
 };
 
-if else(command == "movie-this") {
+else if (command == "movie-this") {
 
 	console.log("movie");
     // var movieName = process.argv[3];

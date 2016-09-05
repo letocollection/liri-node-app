@@ -26,15 +26,15 @@ for (var i = 2; i < nodeArgs.length; i++) {
 var queryUrl = 'http://www.omdbapi.com/?t=' + movieName + '&y=&plot=short&r=json&tomatoes=true';
 
 
-// console.log(queryUrl);
-console.log("===================================================================");
+console.log(queryUrl);
+
 
 request(queryUrl, function(error, response, body) {
 
     // If the request is successful (i.e. if the response status code is 200)
     if (!error && response.statusCode == 200) {
 
-
+        console.log("===================================================================");
         console.log("Title: " + JSON.parse(body).Title);
         console.log("Year Released: " + JSON.parse(body).Year);
         console.log("IMDB's Rating: " + JSON.parse(body).imdbRating);
