@@ -1,1 +1,1 @@
-node spotify.js smells like teen spirit
+spotify-this-song,"I Want it That Way"
